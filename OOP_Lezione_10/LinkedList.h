@@ -20,4 +20,6 @@ public:
 	void DeleteList();
 
 	Node* FindElement(int index);
+
+	void BubbleSort();
 };

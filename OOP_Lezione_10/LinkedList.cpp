@@ -99,3 +99,17 @@ void LinkedList::DeleteList() {
 		_size--;
 	}
 }
+
+void LinkedList::BubbleSort() {
+	int index = 0;
+
+	for (Node* tmp = _head; index != _size; tmp = tmp->prev, index++) {
+		int index1 = 0;
+		for (Node* tmp1 = tmp->prev; index1 != _size; tmp1 = tmp1->prev, index1++) {
+			if (tmp->GetData() < tmp1->GetData()) {
+
+				tmp->operator= (tmp1);
+			}
+		}
+	}
+}

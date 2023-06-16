@@ -34,9 +34,11 @@ int main() {
 	list3.DeleteElement(1);
 	list3.ShowList();
 	std::cout << "\n\n";
-	list.DeleteList();
-	list.ShowList();
+	//list.DeleteList();
+	//list.ShowList();
 
+	list.BubbleSort();
+	list.ShowList();
 
 
 
